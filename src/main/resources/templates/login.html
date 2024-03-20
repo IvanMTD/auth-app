@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+    </head>
+    <body>
+        <form th:method="POST" th:action="@{/login}">
+            <input type="text" name="username" id="username">
+            <input type="password" name="password" id="password">
+            <input type="submit" value="Войти">
+        </form>
+        <a th:href="@{/oauth2/authorization/keycloak}">Войти с помощью SSO</a>
+    </body>
+</html>
